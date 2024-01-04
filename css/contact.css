@@ -1,0 +1,111 @@
+body{
+    overflow-y:auto;
+    overflow-x:hidden;
+     background-color: #156795;
+     font-family: 'Poppins', sans-serif;
+     background-image: url(../media/contact.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     
+     
+ }
+ 
+ /* Navbar style */
+.navbar {
+    width: 100%;
+    margin: 5 auto;
+    position: fixed;
+    top: -5px;
+    background-color: #156795;
+    margin-bottom: 40px;
+}
+
+/*Navbar components style*/
+.navbar a {
+    float: left;
+    display: block;
+    color: gray;
+    text-align: center;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+#home{
+    color: #ffffff;
+}
+#home:hover {
+
+    background-color: #FFFFFF;
+    color: black;
+}
+#userSymbol {
+   color: #ffffff;
+}
+#userSymbol:hover {
+
+    background-color: #FFFFFF;
+    color: black;
+}
+
+ .containers{
+    top: 70px;
+    position: relative;
+     display:flex;
+     justify-content:center;
+     align-items:center;
+     box-shadow: 0 3px 10px rgb(0 0 0 / 1.8);
+     border-radius: 10px;
+     height:120vh;
+     max-width:1000px;
+     background: rgba(255, 255, 255, 0.5);
+     
+   
+ }
+ .forms{
+    position: absolute;
+     max-width:600px;
+     margin:0 auto;
+ }
+ .box{
+     position:relative;
+     text-align: center;
+     
+     height:12vh;
+     width:100vw;
+ }
+ .head{
+     text-align: center;
+ }
+ .head p{
+     padding-top:5%;
+ }
+ 
+ #button {
+    position: relative;
+    background-color: #156795;
+    width: 260px;
+   margin-bottom: 30px;
+   left: 40%;
+   display: block;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+
+ }
+ 
+.error {
+    color:rgb(255, 0, 0);
+    margin-left: -23rem;
+    font-size: 18px;
+    background-color: aliceblue;
+}
+.success {
+    color: #00f829;
+    font-size: 18px;
+    margin-left: -23rem;
+    background-color: aliceblue;
+
+}
+

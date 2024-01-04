@@ -1,0 +1,133 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rijal Almaa</title>
+  <!-- <meta http-equiv="refresh" content="2"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- CSS here -->
+  <link rel="stylesheet" href="../css/thingstodo.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&family=Satisfy&display=swap');
+    </style>
+
+</head>
+
+<body>
+<header class="header">
+    <div class="container">
+        <nav class="nav">
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#map2" onclick="cancelnav()" class="nav-link">LOCATION</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#buy" onclick="cancelnav()" class="nav-link">TICKETS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#areas" onclick="cancelnav()" class="nav-link">DISCOVER</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="RijalAlmaa">
+    <div class="container">
+        <div class="main-heading">
+                <h1 class="title">Rijal Almaa</h1>
+                <h2 class="subtitle">Village in Aseer</h2>
+                <p class="discription">A trip to Aseer is not complete without a visit to Rijal Almaa 
+                    historical village, which is only 45 km away from Abha. With its stone-built 
+                    castles and colourful buildings, it made it to the list of tourism villages of
+                     the world.</p>
+        </div>
+        <a href="#buy" class="btn btn-gradient">BUY TICKETS</a>
+    </div>      
+</div>
+
+<div class="h1">
+    <h1 id="areas">&nbspDISCOVER</h1>
+</div>
+<div class="pic7">
+    <div class="container">
+        <div class="main-heading">
+                <h1 class="title">Tales that echoes through the land</h1>
+                <p class="discription">The ancient remains and folk tales, hidden inside the unique 
+                    architectural designs of Rijal Almaa village, which have been echoing for 
+                    more than 700 years, are historical evidence that attest for its early 
+                    civilization.</p>
+        </div>
+    </div>
+</div>
+<div class="pic8">
+    <div class="container">
+        <div class="main-heading">
+                <h1 class="title">Beauty and meaning in Rijal Almaa’s architecture</h1>
+                <p class="discription">The architecture of Rijal Almaa’s was not based solely on aesthetics. 
+                    Rather, it had a social humanitarian significance in its designs, where family
+                     members shared multiple- floors- buildings. Thus, this reflects its social
+                      values of this area. </p>
+        </div>
+    </div>
+</div>
+<div class="pic9">
+    <div class="container">
+        <div class="main-heading">
+                <h1 class="title">The way leading to Rijal Almaa</h1>
+                <p class="discription">Rijal Almaa is reachable by road via Aqabat Sama, which connects Abha with Rijal Almaa village.</p>
+        </div>
+    </div>
+</div>
+
+<div class="h1">
+    <h1 id="buy">&nbspBUY YOUR TICKETS</h1>
+</div>
+<section class="booking">
+    <div class="continer">
+        <form action="" id="form" class="form">
+            <div class="input-group">
+                <label for="name" class="input-label">FULL NAME</label>
+                <input type="text" class="input" id="name" placeholder="e.g Mohammed">
+            </div>
+            <div class="input-group">
+                <label for="date" class="input-label">DATE</label>
+                <input type="date" class="input" id="date">
+            </div>
+            <div class="input-group">
+                <label for="email" class="input-label">E-MAIL</label>
+                <input type="text" class="input" id="email" placeholder="ahmed@gmail.com">
+            </div>
+            <div class="input-group">
+                <label for="tickets" class="input-label">TICKETS</label>
+                <input type="number" class="input" id="tickets" placeholder="0">
+            </div>
+            <div class="input-group">
+                <label for="hotel" class="input-label">AREA</label>
+                <input type="text" class="hotel-input" id="hotel" value="Rijal Almaa Village" readonly>
+            </div>
+            <button type="submit" class="btn form-btn btn-blue" id="btn1">BUY</button>
+            <span class="error" id="error"></span>
+            <span class="success" id="success"></span>
+        </form>
+    </div>
+</section>
+<div class="h1">
+    <h1>&nbspLOCATION</h1>
+</div>
+<iframe class="map2" id="map2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3789.8879452134324!2d42.27771012494178!3d18.215072406732972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e35ce078fbcd53%3A0x745aa52321acd522!2z2YXZhtiq2LLZhyDYsdis2KfZhCDYo9mE2YXYuQ!5e0!3m2!1sar!2ssa!4v1675838401063!5m2!1sar!2ssa" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<script src="../JavaScript/thingstodo.js" type="module"></script>
+
+</body>
+</html>

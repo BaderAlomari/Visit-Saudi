@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mövenpick</title>
+  <!-- <meta http-equiv="refresh" content="2"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- CSS here -->
+  <link rel="stylesheet" href="../css/hotel1.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&family=Satisfy&display=swap');
+    </style>
+
+</head>
+
+<body>
+<header class="header">
+    <div class="container">
+        <nav class="nav">
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#map2" onclick="cancelnav()" class="nav-link">LOCATION</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#bookin" onclick="cancelnav()" class="nav-link">BOOK</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="movenpick">
+    <div class="container">
+        <div class="main-heading">
+                <h1 class="title">MÖVENPICK</h1>
+                <h2 class="subtitle">Hotel & Resorts</h2>
+                <p class="discription">At Mövenpick, we elevate simple moments into something
+                     exquisitely delicious. Moments that are good for you,
+                      and good for the world.</p>
+        </div>
+        <a href="#bookin" class="btn btn-gradient">BOOK NOW</a>
+    </div>
+        
+</div>
+<div class="h1">
+    <h1 id="bookin">&nbspBOOKING</h1>
+</div>
+<section class="booking">
+    <div class="continer">
+        <form action="" id="form" class="form">
+            <div class="input-group">
+                <label for="name" class="input-label">FULL NAME</label>
+                <input type="text" class="input" id="name" placeholder="e.g Mohammed">
+            </div>
+            <div class="input-group">
+                <label for="check-in" class="input-label">CHECK-IN</label>
+                <input type="date" class="input" id="check-in">
+            </div>
+            <div class="input-group">
+                <label for="check-out" class="input-label">CHECK-OUT</label>
+                <input type="date" class="input" id="check-out">
+            </div>
+            <div class="input-group">
+                <label for="adults" class="input-label">ADULTS</label>
+                <input type="number" class="input" id="adults" placeholder="0">
+            </div>
+            <div class="input-group">
+                <label for="children" class="input-label">CHILDREN</label>
+                <input type="number" class="input" id="children" placeholder="0">
+            </div>
+            <div class="input-group">
+                <label for="hotel" class="input-label">HOTEL</label>
+                <input type="text" class="hotel-input" id="hotel" value="Mövenpick Hotel & Resorts" readonly>
+            </div>
+            <button type="submit" class="btn form-btn btn-blue" id="btn1">BOOK</button>
+            <span class="error" id="error"></span>
+            <span class="success" id="success"></span>
+        </form>
+    </div>
+</section>
+<div class="h1">
+    <h1>&nbspLOCATION</h1>
+</div>
+<iframe class="map2" id="map2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.4921945558913!2d39.16014798463061!3d21.605736173205372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d09f633dfb5b%3A0x7096a6a9f1b454e9!2z2YHZhtiv2YIg2YXZiNqk2YbYqNmK2YMg2LPZitiq2Yog2LPYqtin2LEg2KzYr9ip!5e0!3m2!1sar!2ssa!4v1675800848885!5m2!1sar!2ssa" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<script src="../JavaScript/hotels.js" type="module"></script>
+
+</body>
+</html>

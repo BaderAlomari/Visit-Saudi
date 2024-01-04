@@ -1,0 +1,138 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Al Ula Moments</title>
+  <!-- <meta http-equiv="refresh" content="2"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- CSS here -->
+  <link rel="stylesheet" href="../css/thingstodo.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&family=Satisfy&display=swap');
+    </style>
+
+</head>
+
+<body>
+<header class="header">
+    <div class="container">
+        <nav class="nav">
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#map2" onclick="cancelnav()" class="nav-link">LOCATION</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#buy" onclick="cancelnav()" class="nav-link">TICKETS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#areas" onclick="cancelnav()" class="nav-link">EVENTS</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="alulapic">
+    <div class="container">
+        <div class="main-heading">
+                <h1 class="title">ALULA MOMENTS</h1>
+                <h2 class="subtitle">Events and Festivals</h2>
+                <p class="discription">Unlock the wonders of AlUla and explore the extraordinary 
+                    landscapes and unique events and festivals offered year-round - a year full 
+                    of art, wellness, heritage, adventure, sports and music.</p>
+        </div>
+        <a href="#buy" class="btn btn-gradient">BUY TICKETS</a>
+    </div>      
+</div>
+
+<div class="h1">
+    <h1 id="areas">&nbspEVENTS</h1>
+</div>
+<div class="pic4">
+    <div class="container">
+        <div class="main-heading">
+                <h1 class="title">ALULA ARABIAN LEOPARD WEEK</h1>
+                <p class="discription">The first annual Arabian Leopard Week is inspired by the 
+                    world's smallest big cat. These majestic creatures symbolise strength, 
+                    beauty and elegance. With events across AlUla, we're raising awareness
+                    for these Critically Endangered cats.</p>
+        </div>
+    </div>
+</div>
+<div class="pic5">
+    <div class="container">
+        <div class="main-heading">
+                <h1 class="title">ALULA ARTS FESTIVAL</h1>
+                <p class="discription">Returning for its second edition, this unique festival 
+                    brings together curated contemporary art, large-scale installations throughout
+                     the landscape, community murals, workshops, talks and more.</p>
+        </div>
+    </div>
+</div>
+<div class="pic6">
+    <div class="container">
+        <div class="main-heading">
+                <h1 class="title">ALULA TRAIL RACE 2023</h1>
+                <p class="discription">The AlUla Trail Race returns to challenge international athletes, 
+                    amateur runners, and children alike. From a 100km ultramarathon, a 50km marathon, 
+                    a 25km half marathon, a 10km fun run, and a 1.4km kids' race, there is 
+                    something for everyone.</p>
+        </div>
+    </div>
+</div>
+
+<div class="h1">
+    <h1 id="buy">&nbspBUY YOUR TICKETS</h1>
+</div>
+<section class="booking">
+    <div class="continer">
+        <form action="" id="form" class="form">
+            <div class="input-group">
+                <label for="name" class="input-label">FULL NAME</label>
+                <input type="text" class="input" id="name" placeholder="e.g Mohammed">
+            </div>
+            <div class="input-group">
+                <label for="date" class="input-label">DATE</label>
+                <input type="date" class="input" id="date">
+            </div>
+            <div class="input-group">
+                <label for="email" class="input-label">E-MAIL</label>
+                <input type="text" class="input" id="email" placeholder="ahmed@gmail.com">
+            </div>
+            <div class="input-group">
+                <label for="tickets" class="input-label">TICKETS</label>
+                <input type="number" class="input" id="tickets" placeholder="0">
+            </div>
+            <div class="input-group">
+                <label for="area" class="input-label">EVENT</label>
+                <select class="input" id="area">
+                    <option value="AlUla Arabian Leopard">AlUla Arabian Leopard</option>
+                    <option value="AlUla arts festival">AlUla arts festival</option>
+                    <option value="AlUla trail race 2023">AlUla trail race 2023</option>
+                  </select>
+            </div>
+            <button type="submit" class="btn form-btn btn-blue" id="btn1">BUY</button>
+            <span class="error" id="error"></span>
+            <span class="success" id="success"></span>
+        </form>
+    </div>
+</section>
+<div class="h1">
+    <h1>&nbspLOCATION</h1>
+</div>
+<iframe class="map2" id="map2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23984.98815069709!2d37.929375616091576!3d26.668012446762233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15a5ad90096b944b%3A0x6dfe771826037fd1!2sFive%20Senses%20Sanctuary!5e0!3m2!1sar!2ssa!4v1675836621727!5m2!1sar!2ssa" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<script src="../JavaScript/thingstodo.js" type="module"></script>
+
+</body>
+</html>

@@ -1,0 +1,477 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    color: #2d2c2c;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/*Reusable style*/
+.container {
+    width: 100%;
+    padding: 0 1.5rem;
+}
+
+.btn {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10rem;
+    text-shadow: 1px 1px 1rem rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.header {
+    height: 6rem;
+    display: flex;
+    background-color: #0F0839;
+}
+
+.hamburger-menu {
+    margin-top: 1.5rem;
+    font-size: 2.6rem;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.hamburger-menu .fa-times{
+    display: none;
+    
+}
+
+.menu-open .hamburger-menu .fa-times{
+    display: block;
+    position: fixed;
+}
+
+.menu-open .hamburger-menu .fa-bars{
+    display: none;
+}
+
+.nav-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #0F0839;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.5s;
+}
+
+.menu-open .nav-list {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.nav-item:not(:last-child) {
+    margin-bottom: 0.5rem;
+}
+
+.nav-link {
+    display: block;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 3rem;
+}
+
+/*Ryiadh season*/
+.blvdpic {
+    width: 100%;
+    height: 100vh;
+    background: url("../media/Riyadh-season-2022.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+}
+.blvdpic::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color: #0f08399d;
+    z-index: -1;
+}
+
+.pic1 {
+    width: 100%;
+    height: 40vh;
+    background: url("../media/Riyadh_boulevard_square_zone.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 0;   
+}
+.pic1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color: #0f08399d;
+    z-index: -1;
+}
+.pic2 {
+    width: 100%;
+    height: 40vh;
+    background: url("../media/1ee6ea9e-1da6-4d90-88a9-f18a0c5cfb97_16x9_1200x676.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 0;   
+}
+.pic2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color: #0f08399d;
+    z-index: -1;
+}
+
+.pic3 {
+    width: 100%;
+    height: 40vh;
+    background: url("../media/IMG_8804.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 0;   
+}
+.pic3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color: #0f08399d;
+    z-index: -1;
+}
+
+/*aLuLA MOMENTS*/
+.alulapic {
+    width: 100%;
+    height: 100vh;
+    background: url("../media/fb-AlUla-Moments.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+}
+.alulapic::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color: #0f08399d;
+    z-index: -1;
+}
+
+.pic4 {
+    width: 100%;
+    height: 40vh;
+    background: url("../media/ArabianLeopardStockImagePromo781x441.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 0;   
+}
+.pic4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color: #0f08399d;
+    z-index: -1;
+}
+.pic5 {
+    width: 100%;
+    height: 40vh;
+    background: url("../media/ArtsFestivalCortonaImagePromo781x441.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 0;   
+}
+.pic5::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color: #0f08399d;
+    z-index: -1;
+}
+
+.pic6 {
+    width: 100%;
+    height: 40vh;
+    background: url("../media/TrailRun781x441.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 0;   
+}
+.pic6::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color: #0f08399d;
+    z-index: -1;
+}
+
+/*Rijal Almaa*/
+.RijalAlmaa {
+    width: 100%;
+    height: 100vh;
+    background: url("../media/rijal-alma-village_crop-1160x650.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+}
+.RijalAlmaa::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color: #0f08399d;
+    z-index: -1;
+}
+.pic7 {
+    width: 100%;
+    height: 40vh;
+    background: url("../media/1901119.jpeg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 0;   
+}
+.pic7::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color: #0f08399d;
+    z-index: -1;
+}
+
+.pic8 {
+    width: 100%;
+    height: 40vh;
+    background: url("../media/rijal22.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 0;   
+}
+.pic8::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color: #0f08399d;
+    z-index: -1;
+}
+
+.pic9 {
+    width: 100%;
+    height: 40vh;
+    background: url("../media/1353616-578968808.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 0;   
+}
+.pic9::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color: #0f08399d;
+    z-index: -1;
+}
+
+
+.main-heading{
+    color: #fff;
+    line-height: 1;
+    text-shadow: 1px 1px 1rem rgb(0, 0, 0);
+    margin-bottom: 2.5rem;
+}
+
+.title {
+    font-size: 4.8rem;
+    letter-spacing: 3px;
+}
+.subtitle {
+    margin-top: 1.5rem;
+    font-size: 3.6rem;
+    font-weight: 100;
+    font-family: 'Satisfy', Cambria;
+
+}
+.discription {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn-gradient{
+    background-image: linear-gradient(to right, #0066ff, #0f0839);
+}
+.btn-gradient:hover{
+    background-image: linear-gradient(to left, #0066ff, #0f0839);
+}
+
+/*form sytyles*/
+
+.booking {
+    background-image: linear-gradient(to left, #0066ff, #0f08399d);
+    padding: 3rem;
+    text-shadow: 1px 1px 1rem rgb(0, 0, 0);
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-label{
+    display: block;
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-left: .3rem;
+}
+
+.input{
+    outline: none;
+    border: none;
+    width: 100%;
+    min-height: 4rem;
+    padding: 1rem;
+    font-weight: bold;
+    color: #a5a5a5;
+    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
+}
+.hotel-input {
+    outline: none;
+    border: none;
+    width: 100%;
+    min-height: 4rem;
+    padding: 1rem;
+    font-weight: bold;
+    color: #000000;
+    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-btn{
+    margin-top: 2rem;
+}
+
+.btn-blue{
+    background-color: #0f0839;
+}
+
+.btn-blue:hover {
+    background-color: #0051fffd;
+}
+
+.h1 {
+    background-image: linear-gradient(to right, #002b6b, #0f0839);
+    color:#fff;
+    text-shadow: 1px 1px 1rem rgb(0, 0, 0);
+}
+
+.error {
+    color:rgb(255, 0, 0);
+    margin-left: 1rem;
+}
+.success {
+    color: #00f829;
+    margin-left: 1rem;
+}
+

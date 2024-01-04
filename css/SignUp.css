@@ -1,0 +1,114 @@
+/* Navbar style */
+.navbar {
+    width: 100%;
+    margin: 5 auto;
+    position: fixed;
+    top: -5px;
+    background-color: #156795;
+}
+
+/*Navbar components style*/
+.navbar a {
+    float: left;
+    display: block;
+    color: gray;
+    text-align: center;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+#home{
+    color: #ffffff;
+}
+#home:hover {
+
+    background-color: #FFFFFF;
+    color: black;
+}
+#userSymbol {
+   color: #ffffff;
+}
+#userSymbol:hover {
+
+    background-color: #FFFFFF;
+    color: black;
+}
+
+/*Position of sign up text*/
+#SignUptext {
+
+    position: absolute;
+    top: 20%;
+    left: 8%;
+}
+
+/*Position of sign up form*/
+#SignUpSection {
+    position: absolute;
+   
+   top: 32%;
+   left: 8%;
+   
+}
+/*Align text fields*/
+#SignUpForm label {
+    width: 150px;
+    display: block;
+}
+
+
+/*Style text fields*/
+#SignUpForm input {
+    width: 115%;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    
+    
+}
+
+/*Border when user is typing*/
+#SignUpForm input:focus {
+    border: 3px solid #156795;
+
+}
+
+/*Style sign up button*/
+#SignUpbutton {
+    position: relative;
+    
+    width: 115%;
+    border: none;
+    text-align: center;
+    background-color: #156795;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/*Style Login hyperlink*/
+#Login {
+    color: #156795;
+    text-decoration: none;
+
+}
+
+/*Image style*/
+.imges img {
+    position: relative;
+    width: 66%;
+    left: 32%;
+    border-radius: 10px;
+    
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+    font-family: tahoma;
+}
